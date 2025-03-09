@@ -23,18 +23,15 @@ expected_index = [4, 0, 0, 1, 1, 2, 3, 2, 2, -1]
 
 
 class AlgorithmsTests(unittest.TestCase):
-
     def test_linear_search(self):
 
         for i in range(len(arrays)):
             result = algorithms.linear_search(arrays[i], elements[i])
             self.assertEqual(result, expected_index[i])
-
     def test_binary_search(self):
         for i in range(len(arrays)):
             result = algorithms.binary_search(arrays[i], elements[i])
             self.assertEqual(result, expected_index[i])
-
     def test_ternary_search(self):
         for i in range(len(arrays)):
             result = algorithms.ternary_search(arrays[i], elements[i])
