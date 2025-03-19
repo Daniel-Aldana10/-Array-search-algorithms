@@ -1,5 +1,4 @@
 def binary_search(list, element):
-    print(f"{list}  {element} binaria")
     left = 0
     right = len(list) - 1
     while left <= right:
@@ -12,13 +11,11 @@ def binary_search(list, element):
             right = middle - 1
     return -1
 def linear_search(list, element):
-    print(f"{list}  {element} lineal")
     for i in range(len(list)):
         if list[i] == element:
             return i
     return -1
 def ternary_search(list, element):
-    print(f"{list}  {element} ternaria")
     left = 0
     right = len(list) - 1
     while left <= right:
