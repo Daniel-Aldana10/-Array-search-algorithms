@@ -60,4 +60,41 @@ test\test_data_generator.py      29      1    97%
 TOTAL                            93      5    95%
 ```
 ---
+# Search Algorithm Comparison
+
+## Table 1: Comparison of Linear, Binary, and Ternary Search
+
+| Size      | Linear Search (Time, Mem) | Binary Search (Time, Mem) | Ternary Search (Time, Mem) |
+|-----------|---------------------------|---------------------------|---------------------------|
+| 10,000,000  | [77,905, 140]  | [5, 140]    | [6, 168]    |
+| 17,000,000  | [303,747, 140] | [16, 140]   | [59, 168]   |
+| 24,000,000  | [760,657, 140] | [102, 140]  | [108, 168]  |
+| 31,000,000  | [960,082, 140] | [317, 140]  | [403, 168]  |
+| 38,000,000  | [639,279, 140] | [164, 140]  | [109, 168]  |
+| 45,000,000  | [1,759,064, 140] | [748, 140] | [650, 168]  |
+
+---
+### Memory Usage
+![Memory Usage](images/Memoria1.png)
+
+### Execution Time
+![Execution Time](images/Tiempo1.png)
+
+## Table 2: Comparison of Binary and Ternary Search
+
+| Size      | Binary Search (Time, Mem) | Ternary Search (Time, Mem) |
+|-----------|---------------------------|---------------------------|
+| 10,000,000  | [3, 140]    | [4, 168]    |
+| 17,000,000  | [10, 140]   | [9, 168]    |
+| 24,000,000  | [9, 140]    | [10, 168]   |
+| 31,000,000  | [176, 140]  | [129, 168]  |
+| 38,000,000  | [1,884, 140] | [1,438, 168] |
+| 45,000,000  | [2,488, 140] | [892, 168]  |
+
+---
+### Memory Usage
+![Memory Usage](images/Memoria2.png)
+
+### Execution Time
+![Execution Time](images/Tiempo2.png)
 If you want to see the lines that are not being used you can run 'python -m cover html' and then 'start htmlcov\index.html'

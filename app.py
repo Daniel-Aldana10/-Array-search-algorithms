@@ -56,7 +56,7 @@ def plot_results(table):
     plt.plot(sizes, ternary_time, marker='^', label='ternary search')
     plt.xlabel("Input Size (n)")
     plt.ylabel("Execution Time (ms)")
-    plt.title("Execution Time of Sorting Algorithms")
+    plt.title("Execution Time of Search Algorithms")
     plt.legend()
     plt.grid()
     plt.show()
@@ -68,20 +68,21 @@ def plot_results(table):
     plt.plot(sizes, ternary_mem, marker='^', label='ternary search')
     plt.xlabel("Input Size (n)")
     plt.ylabel("Memory Usage (bytes)")
-    plt.title("Memory Usage of Sorting Algorithms")
+    plt.title("Memory Usage of Search Algorithms")
     plt.legend()
     plt.grid()
     plt.show()
 
 if __name__ == "__main__":
     minimum_size = 10000000
-    maximum_size = 110000000
-    step = 20000000
+    maximum_size = 50000000
+    step = 7000000
     samples_by_size = 7
     table = execution_time_gathering.take_execution_time(minimum_size, maximum_size, step, samples_by_size)
     print("Size | lineal search | Binary search | Ternary search")
     print_results(table)
     plot_results(table)
+
     table2 = execution_time_gathering.take_execution_time_bin_ter(minimum_size, maximum_size, step, samples_by_size)
     print("Binary Search vs Ternary Search")
     print("Size | Binary search | Ternary search")
