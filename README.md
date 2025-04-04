@@ -59,6 +59,8 @@ test\test_data_generator.py      29      1    97%
 -------------------------------------------------
 TOTAL                            93      5    95%
 ```
+
+If you want to see the lines that are not being used you can run 'python -m cover html' and then 'start htmlcov\index.html'
 ---
 # Search Algorithm Comparison
 
@@ -97,4 +99,43 @@ TOTAL                            93      5    95%
 
 ### Execution Time
 ![Execution Time](images/Tiempo2.png)
-If you want to see the lines that are not being used you can run 'python -m cover html' and then 'start htmlcov\index.html'
+
+# Search Algorithm Comparison 2
+## Table 1: Comparison of Linear, Binary, and Ternary Search between 10M - 100M size of arrays
+Size | lineal search (Time, Mem) | binary search (Time, Mem) | ternary search (Time, Mem)
+10000000 | [92007, 156] | [2, 160] | [2, 192]
+20000000 | [149990, 156] | [2, 160] | [3, 192]
+30000000 | [432263, 156] | [2, 160] | [3, 192]
+40000000 | [482886, 156] | [2, 160] | [3, 192]
+50000000 | [610437, 156] | [2, 160] | [3, 192]
+60000000 | [698339, 156] | [2, 160] | [3, 192]
+70000000 | [806653, 156] | [3, 160] | [4, 192]
+80000000 | [601958, 156] | [4, 160] | [5, 192]
+90000000 | [1304798, 156] | [4, 160] | [5, 192]
+100000000 | [1000406, 156] | [3, 160] | [6, 192]
+
+### Memory Usage
+![Memory Usage ](images/Memoria2M.png)
+
+### Execution Time
+![Execution Time](images/Tiempo2M.png)
+
+## Table 2: Comparison of Binary and Ternary Search between 10 - 100M size of arrays
+Size | binary search (Time, Mem) | ternary search (Time, Mem)
+10000000 | [2, 160] | [2, 192]
+20000000 | [2, 160] | [3, 192]
+30000000 | [3, 160] | [4, 192]
+40000000 | [3, 160] | [4, 192]
+50000000 | [3, 160] | [4, 192]
+60000000 | [3, 160] | [4, 192]
+70000000 | [6, 160] | [7, 192]
+80000000 | [6, 160] | [7, 192]
+90000000 | [5, 160] | [7, 192]
+100000000 | [6, 160] | [8, 192]
+
+
+### Memory Usage
+![Memory Usage ](images/Memoria3M.png)
+
+### Execution Time
+![Execution Time](images/Tiempo3M.png)
